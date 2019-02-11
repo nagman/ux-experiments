@@ -6,6 +6,12 @@
 	"repository": "git@github.com:nagman/ux-experiments.git",
 	"author": "nagman <quentin.durand.f@gmail.com>",
 	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"export": "npm run build && next export"
+	},
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
 		"@zeit/next-sass": "^1.0.1",
