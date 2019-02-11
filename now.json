@@ -1,0 +1,6 @@
+{
+	"version": 2,
+	"name": "ux-experiments",
+	"alias": "ux-experiments",
+	"builds": [{"src": "package.json", "use": "@now/static-build"}]
+}
