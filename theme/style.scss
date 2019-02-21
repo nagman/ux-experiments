@@ -1,0 +1,30 @@
+// Imports
+@import 'reset';
+@import 'variables';
+
+// Breakpoints
+$breakpoints: (
+	phone: 425px,
+	tablet: 768px,
+	desktop: 1440px,
+);
+
+// Body
+body {
+	color: $black;
+	font-size: 16px;
+	font-family: $serif;
+	@include tap($grey);
+	@include scrollbar(6px, $grey, darken($grey, 15), #f6f7f8);
+}
+::selection {
+	background: $black;
+	color: #fff;
+}
+
+// Line-height
+p,
+ul,
+ol {
+	line-height: 1.7;
+}

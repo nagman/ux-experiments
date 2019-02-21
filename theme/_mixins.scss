@@ -1,0 +1,38 @@
+// Breakpoints
+@import 'node_modules/include-media/dist/include-media';
+
+// Scrollbar
+@mixin scrollbar($size, $fg, $fg2, $bg, $margin: 0, $radius: false) {
+	&::-webkit-scrollbar {
+		width: $size;
+		height: $size;
+	}
+	&::-webkit-scrollbar-track {
+		@if $margin {
+			margin: $margin;
+		}
+		@if $radius {
+			border-radius: 50px;
+		}
+		background: $bg;
+	}
+	&::-webkit-scrollbar-thumb {
+		@if $radius {
+			border-radius: 50px;
+		}
+		background: $fg;
+		&:hover {
+			background: $fg2;
+		}
+	}
+}
+@mixin no-scrollbar {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+// Tap
+@mixin tap($color) {
+	-webkit-tap-highlight-color: rgba($color, 0.5);
+}

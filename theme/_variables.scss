@@ -1,0 +1,16 @@
+@import 'mixins';
+
+// Colors
+$blue: #3fa9f5;
+$brown: #b07e48;
+$grey: #ddd;
+$black: #666;
+
+// Fonts
+$serif: 'Playfair Display', serif;
+$sans: 'Varela Round', sans-serif;
+
+// Beziers
+$quint: cubic-bezier(0.7, 0, 0.3, 1);
+$bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeInOutQuad: cubic-bezier(0.46, 0.03, 0.52, 0.96);
