@@ -10,8 +10,8 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"deploy": "now && now alias",
-		"now-build": "next build && next export -o dist"
+		"now-build": "next build && next export -o dist",
+		"deploy": "yarn now-build && now && now alias"
 	},
 	"dependencies": {
 		"@svgr/webpack": "^4.1.0",
