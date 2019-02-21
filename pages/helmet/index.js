@@ -7,4 +7,10 @@ const Helmet = props => (
 	</main>
 );
 
+Helmet.getInitialProps = _ => ({
+	title: 'Helmet',
+	description:
+		'Typography distorsion behind helmet visor. Uses Pixi.js, Next.js and a lot of cool CSS.',
+});
+
 export default Helmet;

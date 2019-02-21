@@ -4,4 +4,10 @@ const Home = props => (
 	</main>
 );
 
+Home.getInitialProps = _ => ({
+	title: 'Home',
+	description:
+		'A set of UX experiments - designed by Pierre Patrault and developed by Quentin Durand',
+});
+
 export default Home;
