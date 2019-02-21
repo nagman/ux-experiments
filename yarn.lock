@@ -3080,6 +3080,16 @@ neo-async@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
 
+next-compose-plugins@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.1.1.tgz#7da0a3ce0c8ce267b5cb4164d2fb6e4aaf61bf86"
+  integrity sha512-4yLtmGjnBlzuYdL66+c/zi8ljl24sK9jtP31UsTG1ZAAHj+ybWfEG/S+HMwK+pD2fNmJ4xQyr4xOubzExcS+Lg==
+
+next-seo@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-1.11.1.tgz#fd17a522b84e3d21c367e5b54e801731c8c1c3ba"
+  integrity sha512-Xll6k00KQR7EUEaXhxbjEOcQm3Emx7/tW7pqx0vQN5NJH3NJWOKBZ2H2R540faacCRfWXeI5PDakfoK7/zKLqQ==
+
 next-server@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/next-server/-/next-server-8.0.0.tgz#2ad17f505b042a4fb47cc2ae0967f7f195e78b6a"
@@ -3091,6 +3101,13 @@ next-server@8.0.0:
     prop-types "15.6.2"
     send "0.16.1"
     url "0.11.0"
+
+next-size@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/next-size/-/next-size-2.0.2.tgz#aa574ac5f17c0cf6f143fdfd9506f4c75d64bbf9"
+  integrity sha512-EF/5qTBkHOyRYa7WV+W5NUTWC1+6wvGtbPeEpZyRIAv1eRL7gxxyMNz5os6LWytziBN4iNN10rouG9zlEbU5LQ==
+  dependencies:
+    chalk "^2.4.1"
 
 next@^8.0.0:
   version "8.0.0"

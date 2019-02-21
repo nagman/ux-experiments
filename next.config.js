@@ -1,7 +1,10 @@
-const withCss = require('@zeit/next-css');
-const withSass = require('@zeit/next-sass');
+const withPlugins = require('next-compose-plugins');
+const css = require('@zeit/next-css');
+const sass = require('@zeit/next-sass');
+const size = require('next-size');
+const seo = require('next-seo');
 
-const sass = withSass({
+const sassConfig = {
 	cssModules: true,
 	cssLoaderOptions: {
 		localIdentName: '[local]__[hash:base64:5]',
@@ -10,6 +13,13 @@ const sass = withSass({
 		includePaths: ['theme'],
 		outputStyle: 'compressed',
 	},
-});
+};
 
-module.exports = withCss(sass);
+const nextConfig = {
+	env: {
+		title: 'UX Experiments',
+		url: 'https://ux-experiments.now.sh',
+	},
+};
+
+module.exports = withPlugins([css, [sass, sassConfig], size, seo], nextConfig);
