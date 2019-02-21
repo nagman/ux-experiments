@@ -1,6 +1,7 @@
 import 'destyle.css';
 import '../theme/style.scss';
 import App, {Container} from 'next/app';
+import Head from 'next/head';
 import NextSeo from 'next-seo';
 import Menu from '../components/Menu';
 
@@ -65,6 +66,13 @@ export default class MyApp extends App {
 
 		return (
 			<Container>
+				<Head>
+					<base href="/static/" />
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+					/>
+				</Head>
 				<NextSeo config={seoConfig} />
 				<Menu />
 				<Component {...pageProps} />
