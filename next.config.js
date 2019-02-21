@@ -16,6 +16,14 @@ const sassConfig = {
 };
 
 const nextConfig = {
+	webpack: function(config) {
+		// SVG
+		config.module.rules.push({
+			test: /.svg$/,
+			use: ['@svgr/webpack'],
+		});
+		return config;
+	},
 	env: {
 		title: 'UX Experiments',
 		url: 'https://ux-experiments.now.sh',
