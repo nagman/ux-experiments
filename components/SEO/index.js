@@ -4,6 +4,11 @@ import NextSeo from 'next-seo';
 const SEO = ({title, description, page}) => {
 	title = `${title} - ${process.env.title}`;
 	const url = process.env.url + page;
+	const screenshot =
+		process.env.url +
+		'/static/screenshots' +
+		(page === '/' ? '/home' : page) +
+		'.jpg';
 
 	const seoConfig = {
 		title,
@@ -25,8 +30,7 @@ const SEO = ({title, description, page}) => {
 			locale: 'en_US',
 			images: [
 				{
-					url:
-						process.env.url + '/static/screenshots' + page + '.jpg',
+					url: screenshot,
 					width: 800,
 					height: 600,
 					alt: title,
