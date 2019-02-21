@@ -67,7 +67,6 @@ export default class MyApp extends App {
 		return (
 			<Container>
 				<Head>
-					<base href="/static/" />
 					<meta
 						name="viewport"
 						content="width=device-width, initial-scale=1, shrink-to-fit=yes"
