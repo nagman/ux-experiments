@@ -1,0 +1,23 @@
+@import 'variables';
+
+.header {
+	display: flex;
+	align-items: center;
+	padding: 50px;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.pageLink {
+	margin: 0 20px;
+}
+
+.searchBtn {
+	margin-left: 100px;
+}
+
+.shoppingBag {
+	margin-left: 30px;
+}
