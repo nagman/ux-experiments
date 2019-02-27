@@ -36,3 +36,18 @@
 @mixin tap($color) {
 	-webkit-tap-highlight-color: rgba($color, 0.5);
 }
+
+// Font Face
+@mixin fontFace($name, $weight, $italic: false) {
+	$url: '/static/fonts/' + $name + '-' + $weight + if($italic, '-italic', '') +
+		'.woff';
+	@font-face {
+		font-family: $name;
+		src: url($url+'2') format('woff2'), url($url) format('woff');
+		font-weight: $weight;
+		@if ($italic) {
+			font-style: italic;
+		}
+		font-display: swap;
+	}
+}
