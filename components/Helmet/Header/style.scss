@@ -3,21 +3,55 @@
 .header {
 	display: flex;
 	align-items: center;
-	padding: 50px;
+	padding: 40px 50px;
+	color: #000;
 }
 
 .logo {
 	margin-right: auto;
+	margin-bottom: -30px;
 }
 
 .pageLink {
-	margin: 0 20px;
+	position: relative;
+	margin: 0 30px;
+	padding: 20px;
+	font-size: 14px;
+	font-weight: 600;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		margin: auto;
+		width: 30px;
+		height: 2px;
+		background: var(--color);
+		transition: transform 0.2s;
+		transform-origin: left;
+	}
+
+	&:not(:hover) {
+		&::after {
+			transform: scaleX(0);
+		}
+	}
 }
 
-.searchBtn {
-	margin-left: 100px;
-}
+.icon {
+	padding: 20px;
+	box-sizing: content-box;
+	cursor: pointer;
+	stroke: currentColor;
+	transition: color 0.2s;
 
-.shoppingBag {
-	margin-left: 30px;
+	&:first-of-type {
+		margin-left: 10px;
+	}
+
+	&:hover {
+		color: var(--color);
+	}
 }

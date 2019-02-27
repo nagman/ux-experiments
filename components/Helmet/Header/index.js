@@ -29,8 +29,8 @@ const Header = _ => (
 		))}
 
 		{/* Icons */}
-		<Search className={style.searchBtn} />
-		<ShoppingBag className={style.shoppingBag} />
+		<Search className={style.icon} />
+		<ShoppingBag className={style.icon} />
 	</header>
 );
 

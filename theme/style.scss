@@ -16,14 +16,13 @@ $breakpoints: (
 
 // Body
 body {
-	color: $black;
 	font-size: 16px;
 	font-family: $graphik;
-	@include tap($grey);
-	@include scrollbar(6px, $grey, darken($grey, 15), #f6f7f8);
+	@include tap(var(--color));
+	// @include scrollbar(6px, $grey, darken($grey, 15), #f6f7f8);
 }
 ::selection {
-	background: $black;
+	background: var(--color);
 	color: #fff;
 }
 

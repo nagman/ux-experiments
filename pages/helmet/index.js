@@ -2,7 +2,7 @@ import style from './style.scss';
 import Header from '../../components/Helmet/Header';
 
 const Helmet = props => (
-	<main>
+	<main className={style.helmet}>
 		<Header />
 	</main>
 );
