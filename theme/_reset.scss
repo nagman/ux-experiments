@@ -12,6 +12,6 @@
 // }
 
 // hide video pop out button on Opera
-body + div {
+body ~ div[style] {
 	display: none;
 }
