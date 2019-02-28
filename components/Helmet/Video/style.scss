@@ -1,0 +1,81 @@
+@import 'variables';
+
+.video {
+	position: absolute;
+	top: 60vh;
+	width: 35vw;
+	transform: translateY(-50%);
+}
+
+.playBtn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	border-radius: 50%;
+	background: #fff;
+	pointer-events: none;
+	transition: {
+		property: opacity, transform;
+		duration: 0.3s;
+		timing-function: ease, $bounce;
+	}
+
+	.video:hover & {
+		transform: scale(1.2);
+	}
+
+	&.playing {
+		opacity: 0;
+	}
+
+	// Triangle
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 7px;
+		width: 0;
+		height: 0;
+		margin: auto;
+		border: 7px solid transparent;
+		border-left-color: #000;
+		border-left-width: 12px;
+		border-right: none;
+	}
+}
+
+.placeholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	cursor: pointer;
+	transition: opacity 0.3s 0.2s;
+
+	&.playing {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
