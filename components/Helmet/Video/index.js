@@ -1,5 +1,6 @@
-import style from './style.scss';
+import style, {blackHelmetWidth} from './style.scss';
 import {useState, useEffect, useRef} from 'react';
+import Img from '../../Img';
 import c from '../../../utils/classname';
 
 const Video = props => {
@@ -26,7 +27,12 @@ const Video = props => {
 				className={c([style.placeholder, playing && style.playing])}
 				onClick={_ => videoRef.current.play()}
 			>
-				<img src="" alt="Qwart Helmet" />
+				<Img
+					src="/static/helmet/black-helmet.jpg"
+					alt="Qwart Helmet"
+					width={282}
+					sizes={blackHelmetWidth}
+				/>
 			</div>
 
 			<button className={c([style.playBtn, playing && style.playing])} />
