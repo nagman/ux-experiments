@@ -4,6 +4,7 @@ const Img = ({src, width, sizes, ...rest}) => {
 	const srcSets = [
 		`${src} ${width}w`,
 		`${src.replace('.', '@2x.')} ${width * 2}w`,
+		`${src.replace('.', '@3x.')} ${width * 3}w`,
 	];
 
 	return (
